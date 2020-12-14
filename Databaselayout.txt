@@ -1,14 +1,12 @@
 DBUser:DuncanXia
 Password:HwTCvKbuehFtffZU
-URL mongodb+srv://Duncanxia:HwTCvKbuehFtffZU@cluster0.j2pnt.mongodb.net/Project3?retryWrites=true&w=majority
+URL:mongodb+srv://Duncanxia:HwTCvKbuehFtffZU@cluster0.j2pnt.mongodb.net/Project3?retryWrites=true&w=majority
 
 Employee table
 {
 	EmpID:
 	Username:
 	Password:
-	FloatingDaysCounter:
-	VacationDayCounter:
 	Contact:{
 		Phone:
 		Email:
@@ -33,54 +31,61 @@ Timesheet table
 	Comment:
 	SubmissionStatus:
 	ApprovalStatus:
-	Sunday{
+	day[0]{
 		StartingTime:
 		EndingTime:
 		TotalHours:
 		FloatingDay:
 		VacationDay:
+		Date:
 	}
-	Monday{
+	day[1]{
 		StartingTime:
 		EndingTime:
 		TotalHours:
 		FloatingDay:
 		VacationDay:
+		Date:
 	}
-	Tuesday{
+	day[2]{
 		StartingTime:
 		EndingTime:
 		TotalHours:
 		FloatingDay:
 		VacationDay:
+		Date:
 	}
-	Wednesday{
+	day[3]{
 		StartingTime:
 		EndingTime:
 		TotalHours:
 		FloatingDay:
 		VacationDay:
+		Date:
 	}
-	Thursday{
+	day[4]{
 		StartingTime:
 		EndingTime:
 		TotalHours:
 		FloatingDay:
 		VacationDay:
+		Date:
 	}
-	Friday{
+	day[5]{
 		StartingTime:
 		EndingTime:
 		TotalHours:
 		FloatingDay:
 		VacationDay:
+		Date:
 	}
-	Saturday{
+	day[6]{
 		StartingTime:
 		EndingTime:
 		TotalHours:
 		FloatingDay:
 		VacationDay:
+		Date:
 	}
 }
 
