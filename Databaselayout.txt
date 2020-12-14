@@ -1,0 +1,89 @@
+DBUser:DuncanXia
+Password:HwTCvKbuehFtffZU
+URL mongodb+srv://Duncanxia:HwTCvKbuehFtffZU@cluster0.j2pnt.mongodb.net/Project3?retryWrites=true&w=majority
+
+Employee table
+{
+	EmpID:
+	Username:
+	Password:
+	FloatingDaysCounter:
+	VacationDayCounter:
+	Contact:{
+		Phone:
+		Email:
+		EmergencyContact1Name:
+		EmergnectContact1Phone:
+		EmergencyContact2Name:
+		EmergnectContact2Phone:
+	}
+	Address:{
+		Address:
+		City:
+		State:
+		Zip:
+		Country:
+	}
+}
+
+Timesheet table
+{
+	TimeSheet_ID:
+	Emp_ID:
+	Comment:
+	SubmissionStatus:
+	ApprovalStatus:
+	Sunday{
+		StartingTime:
+		EndingTime:
+		TotalHours:
+		FloatingDay:
+		VacationDay:
+	}
+	Monday{
+		StartingTime:
+		EndingTime:
+		TotalHours:
+		FloatingDay:
+		VacationDay:
+	}
+	Tuesday{
+		StartingTime:
+		EndingTime:
+		TotalHours:
+		FloatingDay:
+		VacationDay:
+	}
+	Wednesday{
+		StartingTime:
+		EndingTime:
+		TotalHours:
+		FloatingDay:
+		VacationDay:
+	}
+	Thursday{
+		StartingTime:
+		EndingTime:
+		TotalHours:
+		FloatingDay:
+		VacationDay:
+	}
+	Friday{
+		StartingTime:
+		EndingTime:
+		TotalHours:
+		FloatingDay:
+		VacationDay:
+	}
+	Saturday{
+		StartingTime:
+		EndingTime:
+		TotalHours:
+		FloatingDay:
+		VacationDay:
+	}
+}
+
+Holiday table{
+	Holiday dates:
+}
