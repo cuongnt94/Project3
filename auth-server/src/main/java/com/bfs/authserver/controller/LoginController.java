@@ -4,6 +4,8 @@ package com.bfs.authserver.controller;
 import com.bfs.authserver.repository.EmployeeRepository;
 import com.bfs.authserver.security.CookieUtil;
 import com.bfs.authserver.security.JwtUtil;
+import domain.Address;
+import domain.Contact;
 import domain.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -35,6 +37,27 @@ public class LoginController {
 
     @RequestMapping("/login")
     public String login(){
+      //  Optional<Employee> e = employeeRepository.findEmployeeByUsername("Duncan");
+        List<Employee> list = employeeRepository.findAll();
+        Employee e2 = new Employee();
+        e2.setEmpId("3");
+        e2.setUsername("Duncanxia@gmail.com");
+        e2.setPassword("1234");
+        Address a = new Address("123 Sesame Street",
+                "",
+                "New York",
+                "12345",
+                "USA"
+        );
+        e2.setAddress(a);
+        Contact c = new Contact("123-456-7890",
+                "Duncanxia@someplace.com",
+                "Emergency1",
+                "911-911-9999",
+                "Emergency2",
+                "911-911-9999");
+        e2.setContact(c);
+        employeeRepository.insert(e2);
         return "login";
     }
 

@@ -26,6 +26,7 @@ public class Employee {
     @ApiModelProperty(notes = "Employee password", required = true)
     private String password;
 
+
     private Address address;
 
     private Contact contact;
