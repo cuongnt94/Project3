@@ -12,6 +12,7 @@
         <module>timesheet-eureka</module>
         <module>timesheet-gateway</module>
         <module>project-timesheet-service</module>
+        <module>auth-server</module>
     </modules>
 
     <name>project-timesheet-spring-cloud</name>

@@ -5,7 +5,16 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/timesheet-eureka/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/project-timesheet-service/pom.xml" />
+        <option value="$PROJECT_DIR$/project-timesheet-service/timesheet-common/pom.xml" />
+        <option value="$PROJECT_DIR$/project-timesheet-service/timesheet/pom.xml" />
+        <option value="$PROJECT_DIR$/timesheet-gateway/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">

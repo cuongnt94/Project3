@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/project-timesheet-service.iml" filepath="$PROJECT_DIR$/project-timesheet-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/timesheet/timesheet.iml" filepath="$PROJECT_DIR$/timesheet/timesheet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/timesheet-common/timesheet-common.iml" filepath="$PROJECT_DIR$/timesheet-common/timesheet-common.iml" />
+    </modules>
+  </component>
+</project>

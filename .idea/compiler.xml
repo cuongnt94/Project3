@@ -7,15 +7,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="timesheet" />
-        <module name="timesheet-common" />
         <module name="timesheet-eureka" />
-        <module name="timesheet-gateway" />
+        <module name="auth-server" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Project3" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth-server" options="-parameters" />
       <module name="project-timesheet-service" options="-parameters" />
       <module name="timesheet" options="-parameters" />
       <module name="timesheet-common" options="-parameters" />
