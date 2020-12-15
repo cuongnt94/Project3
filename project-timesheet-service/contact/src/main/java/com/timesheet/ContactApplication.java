@@ -10,17 +10,17 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * Description: <br>
  *
  * @author: Billy <br>
- * @createDate: 2020-12-14 <br>
+ * @createDate: 2020-12-15 <br>
  */
 @EnableFeignClients
 @EnableCircuitBreaker
 @EnableEurekaClient
 @SpringBootApplication
-public class TimesheetApplication {
+public class ContactApplication {
 
     public static void main(String[] args) {
 
-        SpringApplication.run(TimesheetApplication.class, args);
+        SpringApplication.run(ContactApplication.class, args);
 
     }
 }

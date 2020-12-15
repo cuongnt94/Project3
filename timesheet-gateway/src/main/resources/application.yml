@@ -16,3 +16,7 @@ zuul:
        path: /timesheet/**
        serviceId: eureka-client-timesheet
        strip-prefix: false
+     contact:
+       path: /contact/**
+       serviceId: eureka-client-contact
+       strip-prefix: false
