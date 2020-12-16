@@ -1,4 +1,4 @@
-package domain;
+package com.timesheet.dao.domain;
 
 import org.springframework.data.annotation.Id;
 import com.querydsl.core.annotations.QueryEntity;

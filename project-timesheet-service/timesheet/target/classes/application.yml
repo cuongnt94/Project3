@@ -4,7 +4,6 @@ server:
     context-path: /timesheet
 
 spring:
-  application: eureka-client-timesheet
   data:
     mongodb:
       username: duncanxia

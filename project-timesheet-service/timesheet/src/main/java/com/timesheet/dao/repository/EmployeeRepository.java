@@ -1,6 +1,6 @@
-package com.bfs.authserver.repository;
+package com.timesheet.dao.repository;
 
-import domain.Employee;
+import com.timesheet.dao.domain.Employee;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 
@@ -10,4 +10,5 @@ public interface EmployeeRepository extends MongoRepository<Employee,String> {
     Optional<Employee> findEmployeeByUsername(String username);
     List<Employee> findAll();
     Employee insert(Employee employee);
+    Optional<Employee> findEmployeeById(int id);
 }
