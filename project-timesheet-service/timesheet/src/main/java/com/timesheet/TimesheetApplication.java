@@ -29,6 +29,7 @@ public class TimesheetApplication implements CommandLineRunner {
     public static void main(String[] args) {
 
         SpringApplication.run(TimesheetApplication.class, args);
+
     }
     @Override
     public void run(String... args) throws Exception {
