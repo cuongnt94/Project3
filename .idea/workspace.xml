@@ -5,41 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8b85eb3-af92-4a3a-b9a7-45ba63a7a5ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__com_google_code_findbugs_annotations_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__com_infradna_tool_bridge_method_annotation_1_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__com_mysema_codegen_codegen_0_6_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__com_mysema_commons_mysema_commons_lang_0_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__com_querydsl_querydsl_apt_4_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__com_querydsl_querydsl_codegen_4_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__com_querydsl_querydsl_core_4_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__com_querydsl_querydsl_mongodb_4_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__org_eclipse_jdt_core_compiler_ecj_4_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__org_javassist_javassist_3_18_2_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__org_mongodb_bson_4_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_4_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__org_mongodb_mongodb_driver_sync_4_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__org_reflections_reflections_0_9_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_2_3_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_3_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_3_0_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__org_springframework_spring_tx_5_2_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/project-timesheet-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/timesheet-common/timesheet-common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/timesheet/src/main/java/com/timesheet/dao/domain/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/timesheet/src/main/java/com/timesheet/dao/domain/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/timesheet/src/main/java/com/timesheet/dao/domain/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/timesheet/src/main/java/com/timesheet/dao/repository/EmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/timesheet/src/main/java/com/timesheet/dao/repository/MyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/timesheet/src/main/java/com/timesheet/dao/repository/MyRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/timesheet/timesheet.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/src/main/java/com/bfs/authserver/DataAccessApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/src/main/java/com/bfs/authserver/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/src/main/java/com/bfs/authserver/security/CookieUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/src/main/java/com/bfs/authserver/security/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/src/main/java/domain/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/src/main/java/domain/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__com_google_guava_guava_15_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/com/bfs/authserver/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/bfs/authserver/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/com/bfs/authserver/repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-access/src/main/java/com/bfs/authserver/repository/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/domain/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-access/src/main/java/domain/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-timesheet-service/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-timesheet-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-timesheet-service/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-timesheet-service/timesheet/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-timesheet-service/timesheet/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-timesheet-service/timesheet/src/main/java/com/timesheet/dao/repository/SpringMongoConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-timesheet-service/timesheet/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/project-timesheet-service/timesheet/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +218,8 @@
     <property name="android.sdk.path" value="E:/W/WorkSpace/Android/android-sdk_r24.4.1-windows/android-sdk-windows" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608050705430" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/project-timesheet-service/timesheet/src/main/java/com/timesheet/dao" />
+    <property name="jdk.selected.JAVA_MODULE" value="openjdk-15" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data-access/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -243,11 +229,21 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dunca\Documents\Beacon Fire\Project3\Code\Project3\data-access\src\main\resources" />
+      <recent name="C:\Users\dunca\Documents\Beacon Fire\Project3\Code\Project3\data-access\src\main" />
+      <recent name="C:\Users\dunca\Documents\Beacon Fire\Project3\Code\Project3\data-access\src\main\java" />
+      <recent name="C:\Users\dunca\Documents\Beacon Fire\Project3\Code\Project3\data-access\src\main\java\repository" />
       <recent name="C:\Users\dunca\Documents\Beacon Fire\Project3\Code\Project3\project-timesheet-service\timesheet\src\main\java\com\timesheet\dao" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="repository" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -255,16 +251,34 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DataAccessApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataAccessApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="auth-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bfs.authserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bfs.authserver.DataAccessApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -297,6 +311,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DataAccessApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
         <item itemvalue="Spring Boot.ZuulGatewayApplication" />
       </list>
@@ -318,6 +333,7 @@
       <workItem from="1608050384766" duration="324000" />
       <workItem from="1608054456676" duration="411000" />
       <workItem from="1608054894145" duration="4705000" />
+      <workItem from="1608078767588" duration="5284000" />
     </task>
     <servers />
   </component>
@@ -375,6 +391,17 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/data-access/src/main/java/com/bfs/authserver/DataAccessApplication.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/timesheet-eureka/pom.xml">

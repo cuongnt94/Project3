@@ -10,6 +10,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/data-access/pom.xml" />
         <option value="$PROJECT_DIR$/project-timesheet-service/pom.xml" />
         <option value="$PROJECT_DIR$/project-timesheet-service/timesheet-common/pom.xml" />
         <option value="$PROJECT_DIR$/project-timesheet-service/timesheet/pom.xml" />
