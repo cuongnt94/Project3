@@ -6,6 +6,7 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
+import Profile from "./containers/Profile/Profile";
 import Summary from "./containers/Summary/Summary";
 import TimeSheet from "./containers/TimeSheet/TimeSheet";
 
@@ -31,7 +32,7 @@ export default function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/timesheet" component = {TimeSheet}/>
-          <Route path="/profile"/>
+          <Route path="/profile" component = {Profile}/>
           <Route path="/" exact component ={Summary}/>
           <Redirect to="/" />
         </Switch>
