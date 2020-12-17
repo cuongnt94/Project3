@@ -9,11 +9,11 @@
     <title>Login</title>
 </head>
 <body>
-<form method="POST" action="/auth/login?redirect=">
-
+<form method="POST" action="/auth/login?redirect=${param.redirect}">
+    <div style="color: red">${error}</div>
     <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
-        <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <input name="username" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
     <div class="form-group">

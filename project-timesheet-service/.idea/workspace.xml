@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2223b587-3b18-431e-9f13-066f59f3d43f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../auth-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth-server/src/main/java/com/bfs/authserver/AuthServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth-server/src/main/java/com/bfs/authserver/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth-server/src/main/java/com/bfs/authserver/security/CookieUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth-server/src/main/java/com/bfs/authserver/security/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth-server/src/main/java/com/bfs/authserver/service/DataAccessService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth-server/src/main/java/domain/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth-server/src/main/java/domain/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth-server/src/main/java/domain/Day.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth-server/src/main/java/domain/Month.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth-server/src/main/java/domain/Timesheet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth-server/src/main/java/domain/Year.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth-server/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth-server/src/test/java/com/bfs/authserver/AuthServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-access/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-access/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-access/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-server/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-server/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-server/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-server/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-server/.idea/dataSources/9053e8bb-9268-4aec-a207-2267eb3d25fe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-server/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-server/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-server/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-server/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-server/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-server/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-server/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-server/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-server/src/main/java/com/bfs/authserver/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-server/src/main/java/com/bfs/authserver/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-server/src/main/java/com/bfs/authserver/repository/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-server/src/main/java/com/bfs/authserver/repository/TimesheetRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-server/src/main/java/com/bfs/authserver/repository/YearRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data-access/src/main/java/com/bfs/authserver/DataAccessApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data-access/src/main/java/com/bfs/authserver/ServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data-access/src/main/java/com/bfs/authserver/repository/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data-access/src/main/java/com/bfs/authserver/security/CookieUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data-access/src/main/java/com/bfs/authserver/security/JwtUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data-access/src/main/java/domain/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data-access/src/main/java/domain/Contact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data-access/src/main/java/domain/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timesheet/src/main/java/com/timesheet/dao/repository/SpringMongoConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/timesheet/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet/target/classes/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1lhhGov0t0sAZwd9uxW4I0nYxqH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mongo" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dunca\Documents\Beacon Fire\Project3\Code\Project3\project-timesheet-service\timesheet\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimesheetApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="timesheet" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.timesheet.TimesheetApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2223b587-3b18-431e-9f13-066f59f3d43f" name="Default Changelist" comment="" />
+      <created>1608055137840</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608055137840</updated>
+      <workItem from="1608055139036" duration="61000" />
+      <workItem from="1608056293237" duration="103000" />
+      <workItem from="1608058962847" duration="10260000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/timesheet/src/main/java/com/timesheet/TimesheetApplication.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

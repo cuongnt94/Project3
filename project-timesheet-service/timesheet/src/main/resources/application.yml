@@ -1,0 +1,17 @@
+server:
+  port: 7000
+  servlet:
+    context-path: /timesheet
+
+spring:
+  application: eureka-client-timesheet
+  data:
+    mongodb:
+      username: duncanxia
+      password: HwTCvKbuehFtffZU
+      database: Project3
+      uri: mongodb+srv://Duncanxia:<password>@cluster0.j2pnt.mongodb.net/<dbname>?retryWrites=true&w=majority
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
