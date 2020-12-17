@@ -30,8 +30,9 @@ class Profile extends Component {
         emergencyPhone1: "",
         emergencyName2: "",
         emergencyPhone2: "",
-        
     }
+
+    
 
     handleChange = (evt) => {
         const value = evt.target.value;

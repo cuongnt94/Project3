@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Table from 'react-bootstrap/Table';
+
 import DayPicker from 'react-day-picker';
-import DatePicker from 'react-datepicker';
+
 import 'react-day-picker/lib/style.css';
 import axios from 'axios'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import DayPickerInput from 'react-day-picker/DayPickerInput';
 class TimeSheet extends Component {
     /*constructor(props) {
        super(props)
@@ -24,7 +24,9 @@ class TimeSheet extends Component {
 
     state = {
         //unit: {
-            selectedDay: null,
+            selectedDay: undefined,
+            isEmpty: true,
+            isDisabled: false,
             weekEnding: "",
             billingHours: "",
             compensatedHours: "",
@@ -103,8 +105,13 @@ class TimeSheet extends Component {
         });
     }
 
-    handleDayClick = (day) => {
-        this.setState({ selectedDay: day });
+    handleDayChange = (selectedDay, modifiers, dayPickerInput) => {
+        const input = dayPickerInput.getInput();
+        this.setState({
+            selectedDay,
+            isEmpty: !input.value.trim(),
+            isDisabled: modifiers.disabled === true,
+        });
     }
 
     save = () => {
@@ -118,8 +125,16 @@ class TimeSheet extends Component {
                     <div class = "col">
                         <div class = "row">
                             <label>
-                                <DayPicker selectedDays={this.state.selectedDay}
-                                onDayClick={this.handleDayClick}/>
+                                <DayPickerInput
+                                    value={this.state.selectedDay}
+                                    onDayChange={this.handleDayChange}
+                                    dayPickerProps={{
+                                        selectedDays: this.state.selectedDay,
+                                        disabledDays: {
+                                        daysOfWeek: [0, 6],
+                                        },
+                                    }}
+                                />
                             </label>
                         </div>
                         <div>
@@ -233,7 +248,7 @@ class TimeSheet extends Component {
                 
 
                 </form>
-                <pre>{JSON.stringify(this.state, null, 2)}</pre>
+                {/*<pre>{JSON.stringify(this.state, null, 2)}</pre>*/}
             </div>
         )
     }
