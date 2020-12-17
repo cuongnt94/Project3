@@ -41,7 +41,8 @@ class TimeSheet extends Component {
 
     onFileChange = event => { 
         // Update the state 
-        this.setState({ selectedFile: event.target.files[0] });    
+        this.setState({ selectedFile: event.target.files[0],
+            loaded: 0, });    
     };
 
     onFileUpload = () => { 
@@ -60,7 +61,7 @@ class TimeSheet extends Component {
        
         // Request made to the backend api 
         // Send formData object 
-        axios.post("api/uploadfile", formData); 
+        axios.post("http://localhost:8000/upload", formData); 
     };
     
     fileData = () => { 
@@ -112,6 +113,7 @@ class TimeSheet extends Component {
             isEmpty: !input.value.trim(),
             isDisabled: modifiers.disabled === true,
         });
+        console.log(this.state);
     }
 
     save = () => {
@@ -126,8 +128,8 @@ class TimeSheet extends Component {
                         <div class = "row">
                             <label>
                                 <DayPickerInput
-                                    value={this.state.selectedDay}
-                                    onDayChange={this.handleDayChange}
+                                    value={this.state.selectedDay} 
+                                    onDayChange={this.handleDayChange} 
                                     dayPickerProps={{
                                         selectedDays: this.state.selectedDay,
                                         disabledDays: {
@@ -139,6 +141,7 @@ class TimeSheet extends Component {
                         </div>
                         <div>
                             <table class="table">
+                                <tbody>
                                 <tr>
                                     <th>Day</th>
                                     <th>Date</th>
@@ -229,7 +232,7 @@ class TimeSheet extends Component {
                                     
                                 </tr>
 
-                                
+                            </tbody>    
                             </table>
                         </div>
 
@@ -248,7 +251,7 @@ class TimeSheet extends Component {
                 
 
                 </form>
-                {/*<pre>{JSON.stringify(this.state, null, 2)}</pre>*/}
+                {/* <pre>{JSON.stringify(this.state, null, 2)}</pre> */}
             </div>
         )
     }
