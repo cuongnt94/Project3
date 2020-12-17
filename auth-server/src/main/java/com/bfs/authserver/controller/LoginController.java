@@ -4,22 +4,18 @@ package com.bfs.authserver.controller;
 import com.bfs.authserver.repository.EmployeeRepository;
 import com.bfs.authserver.security.CookieUtil;
 import com.bfs.authserver.security.JwtUtil;
-import domain.Address;
-import domain.Contact;
 import domain.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 @Controller
 public class LoginController {
@@ -58,19 +54,23 @@ public class LoginController {
 //                "911-911-9999");
 //        e2.setContact(c);
 //        //employeeRepository.insert(e2);
+
         return "login";
     }
 
     @PostMapping("/login")
-    public String login(HttpServletResponse httpServletResponse, String username, String password, String redirect, Model model){
+    public String login(@RequestBody Map<String, Object> payLoad, HttpServletResponse httpServletResponse,String redirect, Model model){
+        String username = (String) payLoad.get("email");
+        String password = (String) payLoad.get("password");
 
         Optional<Employee> e = employeeRepository.findEmployeeByUsername(username);
+        List<Employee> employees= employeeRepository.findAll();
         if (username == null || !e.isPresent() || !e.get().getPassword().equals(password)){
             model.addAttribute("error", "Invalid username or password!");
             return "login";
         }
 
-        String token = JwtUtil.generateToken(signingKey, username);
+        String token = JwtUtil.generateToken(signingKey, e.get().getEmpId());
         CookieUtil.create(httpServletResponse, jwtTokenCookieName, token, false, -1, "localhost");
 
         return "redirect:" + redirect;

@@ -9,6 +9,7 @@ import {
 import Profile from "./containers/Profile/Profile";
 import Summary from "./containers/Summary/Summary";
 import TimeSheet from "./containers/TimeSheet/TimeSheet";
+import Login from "./containers/Login/Login";
 
 export default function App() {
   return (
@@ -25,14 +26,18 @@ export default function App() {
             <li>
               <Link to="/profile">Profile</Link>
             </li>
+            <li>
+              <Link to="/login">Logout</Link>
+            </li>
           </ul>
         </nav>
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Switch>
+        <Switch>        
           <Route path="/timesheet" component = {TimeSheet}/>
           <Route path="/profile" component = {Profile}/>
+          <Route path="/login" component = {Login}/>
           <Route path="/" exact component ={Summary}/>
           <Redirect to="/" />
         </Switch>

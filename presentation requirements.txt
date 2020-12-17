@@ -1,0 +1,10 @@
+1. authorization flow
+2. database design
+3. backend architecture
+4. featrues that might be added 
+5. frontend architecture 
+6. task assignments for each teammember 
+7. demo
+
+2pm est friday
+
