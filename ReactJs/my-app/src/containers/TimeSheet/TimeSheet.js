@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
-import DayPicker from 'react-day-picker';
-
 import 'react-day-picker/lib/style.css';
 import axios from 'axios'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DayPickerInput from 'react-day-picker/DayPickerInput';
+import { DateUtils } from 'react-day-picker';
+import dateFnsFormat from 'date-fns/format';
+import dateFnsParse from 'date-fns/parse';
+
 class TimeSheet extends Component {
     /*constructor(props) {
        super(props)
@@ -109,11 +111,22 @@ class TimeSheet extends Component {
     handleDayChange = (selectedDay, modifiers, dayPickerInput) => {
         const input = dayPickerInput.getInput();
         this.setState({
-            selectedDay,
+            selectedDay: input.value,
             isEmpty: !input.value.trim(),
             isDisabled: modifiers.disabled === true,
         });
-        console.log(this.state);
+    }
+
+    parseDate = (str, format, locale) => {
+        const parsed = dateFnsParse(str, format, new Date(), { locale });
+        if (DateUtils.isDate(parsed)) {
+          return parsed;
+        }
+        return undefined;
+    }
+
+    formatDate = (date, format, locale) => {
+        return dateFnsFormat(date, format, { locale });
     }
 
     save = () => {
@@ -128,6 +141,10 @@ class TimeSheet extends Component {
                         <div class = "row">
                             <label>
                                 <DayPickerInput
+                                    formatDate={this.formatDate}
+                                    format={'MM/dd/yyyy'}
+                                    parseDate={this.parseDate}
+                                    placeholder={`${dateFnsFormat(new Date(), 'MM/dd/yyyy')}`}
                                     value={this.state.selectedDay} 
                                     onDayChange={this.handleDayChange} 
                                     dayPickerProps={{
@@ -251,7 +268,7 @@ class TimeSheet extends Component {
                 
 
                 </form>
-                {/* <pre>{JSON.stringify(this.state, null, 2)}</pre> */}
+                <pre>{JSON.stringify(this.state, null, 2)}</pre>
             </div>
         )
     }
