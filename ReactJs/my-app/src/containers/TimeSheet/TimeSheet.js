@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import Table from 'react-bootstrap/Table';
-import DayPicker from 'react-day-picker';
-import DatePicker from 'react-datepicker';
+
 import 'react-day-picker/lib/style.css';
 import axios from 'axios'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import DayPickerInput from 'react-day-picker/DayPickerInput';
+import { DateUtils } from 'react-day-picker';
+import dateFnsFormat from 'date-fns/format';
+import dateFnsParse from 'date-fns/parse';
 
 class TimeSheet extends Component {
     /*constructor(props) {
@@ -24,7 +26,9 @@ class TimeSheet extends Component {
 
     state = {
         //unit: {
-            selectedDay: null,
+            selectedDay: undefined,
+            isEmpty: true,
+            isDisabled: false,
             weekEnding: "",
             billingHours: "",
             compensatedHours: "",
@@ -39,7 +43,8 @@ class TimeSheet extends Component {
 
     onFileChange = event => { 
         // Update the state 
-        this.setState({ selectedFile: event.target.files[0] });    
+        this.setState({ selectedFile: event.target.files[0],
+            loaded: 0, });    
     };
 
     onFileUpload = () => { 
@@ -58,7 +63,7 @@ class TimeSheet extends Component {
        
         // Request made to the backend api 
         // Send formData object 
-        axios.post("api/uploadfile", formData); 
+        axios.post("http://localhost:8000/upload", formData); 
     };
     
     fileData = () => { 
@@ -103,8 +108,25 @@ class TimeSheet extends Component {
         });
     }
 
-    handleDayClick = (day) => {
-        this.setState({ selectedDay: day });
+    handleDayChange = (selectedDay, modifiers, dayPickerInput) => {
+        const input = dayPickerInput.getInput();
+        this.setState({
+            selectedDay: input.value,
+            isEmpty: !input.value.trim(),
+            isDisabled: modifiers.disabled === true,
+        });
+    }
+
+    parseDate = (str, format, locale) => {
+        const parsed = dateFnsParse(str, format, new Date(), { locale });
+        if (DateUtils.isDate(parsed)) {
+          return parsed;
+        }
+        return undefined;
+    }
+
+    formatDate = (date, format, locale) => {
+        return dateFnsFormat(date, format, { locale });
     }
 
     save = () => {
@@ -118,12 +140,25 @@ class TimeSheet extends Component {
                     <div class = "col">
                         <div class = "row">
                             <label>
-                                <DayPicker selectedDays={this.state.selectedDay}
-                                onDayClick={this.handleDayClick}/>
+                                <DayPickerInput
+                                    formatDate={this.formatDate}
+                                    format={'MM/dd/yyyy'}
+                                    parseDate={this.parseDate}
+                                    placeholder={`${dateFnsFormat(new Date(), 'MM/dd/yyyy')}`}
+                                    value={this.state.selectedDay} 
+                                    onDayChange={this.handleDayChange} 
+                                    dayPickerProps={{
+                                        selectedDays: this.state.selectedDay,
+                                        disabledDays: {
+                                        daysOfWeek: [0, 6],
+                                        },
+                                    }}
+                                />
                             </label>
                         </div>
                         <div>
                             <table class="table">
+                                <tbody>
                                 <tr>
                                     <th>Day</th>
                                     <th>Date</th>
@@ -214,7 +249,7 @@ class TimeSheet extends Component {
                                     
                                 </tr>
 
-                                
+                            </tbody>    
                             </table>
                         </div>
 
