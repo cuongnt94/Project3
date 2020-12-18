@@ -60,7 +60,7 @@ class Summary extends Component {
    }
  
     renderTableData = () => {
-       return this.state.summaryUnits.slice(0, this.state.itemsToShow).map((summaryUnit, index) => {
+       return this.state.data.slice(0, this.state.itemsToShow).map((summaryUnit, index) => {
           const { weekEnding, totalHours, submissionStatus, approvalStatus, option, comment } = summaryUnit //destructuring
           return (
              <tr>
