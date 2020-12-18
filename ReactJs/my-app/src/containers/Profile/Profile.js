@@ -25,7 +25,7 @@ class Profile extends Component {
             "token":this.state.token,
         }
    
-        this.setState({data: axios.get('localhost:8000/project/contact/getcontact', payload)
+        this.setState({data: axios.get('localhost:8000/project/contact/getcontact')
                .then(function (response) {
                console.log(response);
                if(response.data.code == 200){

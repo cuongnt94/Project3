@@ -13,6 +13,16 @@ import Login from "./containers/Login/Login";
 
 class App extends Component {
 
+  state = {
+    token: 1,
+  }
+
+  getToken(tokenCallBack)
+  {
+    this.setState({
+      token: tokenCallBack
+    })
+  }
   render(){
     return (
       <Router>
@@ -37,10 +47,10 @@ class App extends Component {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>        
-          <Route path="/timesheet" component = {TimeSheet}/>
-          <Route path="/profile" component = {Profile}/>
-          <Route path="/login" component = {Login}/>
-          <Route path="/" exact component ={Summary} />
+          <Route path="/timesheet" render={() => <TimeSheet token={this.state.token} />}/>
+          <Route path="/profile" render={() => <Profile token={this.state.token} />}/>
+          <Route path="/login" render={() => <Login tokenCallBack={this.getToken} />}/>
+          <Route path="/" render={() => <Summary token={this.state.token} />}/>
           <Redirect to="/" />
         </Switch>
       </div>

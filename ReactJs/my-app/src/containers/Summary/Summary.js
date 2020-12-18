@@ -13,8 +13,7 @@ class Summary extends Component {
             { weekEnding: '3/10/2018', totalHours: 40, submissionStatus: 'Completed', approvalStatus: 'Approved', option: 'View', comment: '' },
          ],
          
-         //summaryUnits: axios.get("http://localhost:8001/get/"),
-         
+         token: props.token,
          data: null,
          itemsToShow: 2,
          expanded: false,
@@ -27,7 +26,7 @@ class Summary extends Component {
          "token":this.state.token,
       }
 
-      this.setState({data: axios.get('localhost:8000/project/timesheet/getShortTimesheet', payload)
+      this.setState({data: axios.get('localhost:8000/project/timesheet/getShortTimesheet')
             .then(function (response) {
             console.log(response);
             if(response.data.code == 200){
@@ -51,14 +50,14 @@ class Summary extends Component {
       ) : (
         this.setState({ itemsToShow: 2, expanded: false })
       )
-    }
+   }
 
-    renderTableHeader() {
+   renderTableHeader() {
        let header = Object.keys(this.state.summaryUnits[0])
        return header.map((key, index) => {
           return <th key={index}>{key.toUpperCase()}</th>
        })
-    }
+   }
  
     renderTableData = () => {
        return this.state.summaryUnits.slice(0, this.state.itemsToShow).map((summaryUnit, index) => {

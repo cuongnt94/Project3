@@ -24,23 +24,30 @@ class TimeSheet extends Component {
       });
     }*/
 
-    state = {
-        //unit: {
-            selectedDay: undefined,
-            isEmpty: true,
-            isDisabled: false,
-            weekEnding: "",
-            billingHours: "32",
-            compensatedHours: "40",
-            startingTime: "N/A",
-            endingTime: "N/A",
-            totalHours: 0,
-            dayOff: "",
-        //}
+    constructor(props)
+    {
+        super(props)
 
-        selectedFile: null,
-        data: null,
+        this.state = {
+            //unit: {
+                selectedDay: undefined,
+                isEmpty: true,
+                isDisabled: false,
+                weekEnding: "",
+                billingHours: "32",
+                compensatedHours: "40",
+                startingTime: "N/A",
+                endingTime: "N/A",
+                totalHours: 0,
+                dayOff: "",
+            //}
+    
+            selectedFile: null,
+            data: null,
+            token: props.token,
+        }
     }
+    
 
     componentDidMount()
     {
@@ -48,7 +55,7 @@ class TimeSheet extends Component {
             "token":this.state.token,
         }
    
-        this.setState({data: axios.get('localhost:8000/project/timesheet/getShortTimesheet', payload)
+        this.setState({data: axios.get('localhost:8000/project/timesheet/getShortTimesheet')
                .then(function (response) {
                console.log(response);
                if(response.data.code == 200){
@@ -88,7 +95,7 @@ class TimeSheet extends Component {
        
         // Request made to the backend api 
         // Send formData object 
-        axios.post("http://localhost:8001/upload", formData); 
+        axios.post("localhost:8000/project/timesheet/getTimesheet", formData); 
     };
     
     fileData = () => { 
@@ -156,6 +163,7 @@ class TimeSheet extends Component {
 
     save = () => {
         
+        //axios.post("localhost:8000/project/timesheet/getTimesheet", formData)
     }
 
     render() {
