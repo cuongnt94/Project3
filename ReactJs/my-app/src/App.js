@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,9 +11,21 @@ import Summary from "./containers/Summary/Summary";
 import TimeSheet from "./containers/TimeSheet/TimeSheet";
 import Login from "./containers/Login/Login";
 
-export default function App() {
-  return (
-    <Router>
+class App extends Component {
+
+  state = {
+    token: 1,
+  }
+
+  getToken(tokenCallBack)
+  {
+    this.setState({
+      token: tokenCallBack
+    })
+  }
+  render(){
+    return (
+      <Router>
       <div>
         <nav>
           <ul> 
@@ -27,7 +39,7 @@ export default function App() {
               <Link to="/profile">Profile</Link>
             </li>
             <li>
-              <Link to="/login">Logout</Link>
+              <Link to="/login">Login</Link>
             </li>
           </ul>
         </nav>
@@ -35,25 +47,17 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>        
-          <Route path="/timesheet" component = {TimeSheet}/>
-          <Route path="/profile" component = {Profile}/>
-          <Route path="/login" component = {Login}/>
-          <Route path="/" exact component ={Summary}/>
+          <Route path="/timesheet" render={() => <TimeSheet token={this.state.token} />}/>
+          <Route path="/profile" render={() => <Profile token={this.state.token} />}/>
+          <Route path="/login" render={() => <Login tokenCallBack={this.getToken} />}/>
+          <Route path="/" render={() => <Summary token={this.state.token} />}/>
           <Redirect to="/" />
         </Switch>
       </div>
     </Router>
-  );
+    );
+  }
+  
 }
 
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}
+export default App;

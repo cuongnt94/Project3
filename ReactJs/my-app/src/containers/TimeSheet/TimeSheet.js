@@ -24,21 +24,53 @@ class TimeSheet extends Component {
       });
     }*/
 
-    state = {
-        //unit: {
-            selectedDay: undefined,
-            isEmpty: true,
-            isDisabled: false,
-            weekEnding: "",
-            billingHours: "",
-            compensatedHours: "",
-            startingTime: "N/A",
-            endingTime: "N/A",
-            totalHours: 0,
-            dayOff: "",
-        //}
+    constructor(props)
+    {
+        super(props)
 
-        selectedFile: null
+        this.state = {
+            //unit: {
+                selectedDay: undefined,
+                isEmpty: true,
+                isDisabled: false,
+                weekEnding: "",
+                billingHours: "32",
+                compensatedHours: "40",
+                startingTime: "N/A",
+                endingTime: "N/A",
+                totalHours: 0,
+                dayOff: "",
+            //}
+    
+            selectedFile: null,
+            data: null,
+            token: props.token,
+        }
+    }
+    
+
+    componentDidMount()
+    {
+        var payload={
+            "token":this.state.token,
+        }
+   
+        this.setState({data: axios.get('localhost:8000/project/timesheet/getShortTimesheet')
+               .then(function (response) {
+               console.log(response);
+               if(response.data.code == 200){
+               console.log("Getting data successfully");
+               console.log(this.state.data);
+               }
+               else{
+               console.log("Fail to get data");
+               alert("Invalid Data from Backend");
+               }
+               })
+               .catch(function (error) {
+               console.log(error);
+            })
+        })
     }
 
     onFileChange = event => { 
@@ -63,7 +95,7 @@ class TimeSheet extends Component {
        
         // Request made to the backend api 
         // Send formData object 
-        axios.post("http://localhost:8000/upload", formData); 
+        axios.post("localhost:8000/project/timesheet/getTimesheet", formData); 
     };
     
     fileData = () => { 
@@ -131,6 +163,7 @@ class TimeSheet extends Component {
 
     save = () => {
         
+        //axios.post("localhost:8000/project/timesheet/getTimesheet", formData)
     }
 
     render() {
@@ -139,7 +172,7 @@ class TimeSheet extends Component {
                 <form>
                     <div class = "col">
                         <div class = "row">
-                            <label>
+                            <div class = "col">
                                 <DayPickerInput
                                     formatDate={this.formatDate}
                                     format={'MM/dd/yyyy'}
@@ -154,7 +187,9 @@ class TimeSheet extends Component {
                                         },
                                     }}
                                 />
-                            </label>
+                            </div>
+                            <div class = "col">Total Billing Hours: {this.state.billingHours}</div>
+                            <div class = "col">Total Compensated Hours: {this.state.compensatedHours}</div>
                         </div>
                         <div>
                             <table class="table">
