@@ -30,15 +30,40 @@ class TimeSheet extends Component {
             isEmpty: true,
             isDisabled: false,
             weekEnding: "",
-            billingHours: "",
-            compensatedHours: "",
+            billingHours: "32",
+            compensatedHours: "40",
             startingTime: "N/A",
             endingTime: "N/A",
             totalHours: 0,
             dayOff: "",
         //}
 
-        selectedFile: null
+        selectedFile: null,
+        data: null,
+    }
+
+    componentDidMount()
+    {
+        var payload={
+            "token":this.state.token,
+        }
+   
+        this.setState({data: axios.get('localhost:8000/project/timesheet/getShortTimesheet', payload)
+               .then(function (response) {
+               console.log(response);
+               if(response.data.code == 200){
+               console.log("Getting data successfully");
+               console.log(this.state.data);
+               }
+               else{
+               console.log("Fail to get data");
+               alert("Invalid Data from Backend");
+               }
+               })
+               .catch(function (error) {
+               console.log(error);
+            })
+        })
     }
 
     onFileChange = event => { 
@@ -63,7 +88,7 @@ class TimeSheet extends Component {
        
         // Request made to the backend api 
         // Send formData object 
-        axios.post("http://localhost:8000/upload", formData); 
+        axios.post("http://localhost:8001/upload", formData); 
     };
     
     fileData = () => { 
@@ -139,7 +164,7 @@ class TimeSheet extends Component {
                 <form>
                     <div class = "col">
                         <div class = "row">
-                            <label>
+                            <div class = "col">
                                 <DayPickerInput
                                     formatDate={this.formatDate}
                                     format={'MM/dd/yyyy'}
@@ -154,7 +179,9 @@ class TimeSheet extends Component {
                                         },
                                     }}
                                 />
-                            </label>
+                            </div>
+                            <div class = "col">Total Billing Hours: {this.state.billingHours}</div>
+                            <div class = "col">Total Compensated Hours: {this.state.compensatedHours}</div>
                         </div>
                         <div>
                             <table class="table">

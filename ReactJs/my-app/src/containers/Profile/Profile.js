@@ -7,21 +7,6 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Profile.css';
 class Profile extends Component {
-    /*constructor(props) {
-       super(props)
-       const [state, setState] = useState({
-        weekEnding: "",
-        billingHours: "",
-        compensatedHours: "",
-        startingTime: true,
-        endingTime: "master",
-        totalHours: "",
-        floatingDay: false,
-        holiday: false,
-        vacation: false
-      });
-    }*/
-
     state = {
         phone: "",
         email: "",
@@ -30,10 +15,34 @@ class Profile extends Component {
         emergencyPhone1: "",
         emergencyName2: "",
         emergencyPhone2: "",
+
+        user: null,
     }
 
+    componentDidMount()
+    {
+        var payload={
+            "token":this.state.token,
+        }
+   
+        this.setState({data: axios.get('localhost:8000/project/contact/getcontact', payload)
+               .then(function (response) {
+               console.log(response);
+               if(response.data.code == 200){
+               console.log("Getting data successfully");
+               console.log(this.state.data);
+               }
+               else{
+               console.log("Fail to get data");
+               alert("Invalid Data from Backend");
+               }
+               })
+               .catch(function (error) {
+               console.log(error);
+            })
+        })
+    }
     
-
     handleChange = (evt) => {
         const value = evt.target.value;
         this.setState({
