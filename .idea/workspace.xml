@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d8b85eb3-af92-4a3a-b9a7-45ba63a7a5ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/contact/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/contact/src/main/java/com/timesheet/ContactApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/contact/src/main/java/com/timesheet/controller/ContactController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/contact/src/main/java/com/timesheet/service/ContactService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/contact/src/main/java/com/timesheet/service/impl/ContactServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/contact/src/main/java/com/timesheet/vo/ContactRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/contact/src/main/java/com/timesheet/vo/ContactResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-timesheet-service/contact/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Project3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/data-access.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-timesheet-service/contact/contact.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-eureka/timesheet-eureka.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-gateway/timesheet-gateway.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-timesheet-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-timesheet-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-timesheet-service/timesheet/src/main/java/com/timesheet/TimesheetApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-timesheet-service/timesheet/src/main/java/com/timesheet/TimesheetApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timesheet-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactJs/my-app/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/ReactJs/my-app/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactJs/my-app/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReactJs/my-app/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactJs/my-app/src/containers/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactJs/my-app/src/containers/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/.idea/artifacts/auth_server_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/.idea/artifacts/auth_server_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/com/bfs/authserver/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/bfs/authserver/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/com/bfs/authserver/service/DataAccessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/bfs/authserver/service/DataAccessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/domain/Day.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/domain/Day.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/domain/Timesheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/domain/Timesheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-timesheet-service/project-timesheet-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project-timesheet-service/project-timesheet-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-timesheet-service/timesheet-common/timesheet-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project-timesheet-service/timesheet-common/timesheet-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-timesheet-service/timesheet/timesheet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project-timesheet-service/timesheet/timesheet.iml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/timesheet-eureka/target/" />
-    <ignored path="$PROJECT_DIR$/timesheet-gateway/target/" />
-    <ignored path="$PROJECT_DIR$/project-timesheet-service/target/" />
-    <ignored path="$PROJECT_DIR$/project-timesheet-service/timesheet-common/target/" />
-    <ignored path="$PROJECT_DIR$/project-timesheet-service/timesheet/target/" />
-    <ignored path="$PROJECT_DIR$/project-timesheet-service/contact/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,19 +117,13 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1712" />
     <option name="y" value="-8" />
     <option name="width" value="1736" />
     <option name="height" value="1416" />
   </component>
+  <component name="ProjectId" id="1lnjHTA1I4rJDXTvt9NlPMdJF0D" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -320,33 +312,62 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="E:/W/WorkSpace/Android/android-sdk_r24.4.1-windows/android-sdk-windows" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608075456178" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.ZuulGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.AuthServerApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="auth-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bfs.authserver.AuthServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataAccessApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="data-access" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bfs.authserver.DataAccessApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="timesheet-eureka" />
       <extension name="coverage">
@@ -356,6 +377,13 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.timesheet.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimesheetApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="timesheet" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.timesheet.TimesheetApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -380,6 +408,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -394,6 +423,7 @@
       <workItem from="1607958445484" duration="11419000" />
       <workItem from="1608050384766" duration="324000" />
       <workItem from="1608051733164" duration="5348000" />
+      <workItem from="1608239662812" duration="4452000" />
     </task>
     <servers />
   </component>
@@ -439,7 +469,18 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/timesheet-eureka/pom.xml">

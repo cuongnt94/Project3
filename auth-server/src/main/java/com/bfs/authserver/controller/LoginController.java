@@ -8,16 +8,14 @@ import domain.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.*;
 
-@Controller
+@RestController// Controller
 public class LoginController {
 
     private static final String jwtTokenCookieName = "JWT-TOKEN";
@@ -57,22 +55,20 @@ public class LoginController {
 
         return "login";
     }
-
+    @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping("/login")
     public String login(@RequestBody Map<String, Object> payLoad, HttpServletResponse httpServletResponse,String redirect, Model model){
         String username = (String) payLoad.get("email");
         String password = (String) payLoad.get("password");
-
         Optional<Employee> e = employeeRepository.findEmployeeByUsername(username);
         List<Employee> employees= employeeRepository.findAll();
         if (username == null || !e.isPresent() || !e.get().getPassword().equals(password)){
-            model.addAttribute("error", "Invalid username or password!");
-            return "login";
+            return "401";
         }
 
         String token = JwtUtil.generateToken(signingKey, e.get().getEmpId());
         CookieUtil.create(httpServletResponse, jwtTokenCookieName, token, false, -1, "localhost");
-
-        return "redirect:" + redirect;
+        //httpServletResponse.sendRedirect()
+        return token;
     }
 }

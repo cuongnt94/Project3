@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Project3.iml" filepath="$PROJECT_DIR$/.idea/Project3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auth-server/auth-server.iml" filepath="$PROJECT_DIR$/auth-server/auth-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-timesheet-service/contact/contact.iml" filepath="$PROJECT_DIR$/project-timesheet-service/contact/contact.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data-access/data-access.iml" filepath="$PROJECT_DIR$/data-access/data-access.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-timesheet-service/project-timesheet-service.iml" filepath="$PROJECT_DIR$/project-timesheet-service/project-timesheet-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-timesheet-service/timesheet/timesheet.iml" filepath="$PROJECT_DIR$/project-timesheet-service/timesheet/timesheet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-timesheet-service/timesheet-common/timesheet-common.iml" filepath="$PROJECT_DIR$/project-timesheet-service/timesheet-common/timesheet-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/timesheet-eureka/timesheet-eureka.iml" filepath="$PROJECT_DIR$/timesheet-eureka/timesheet-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/timesheet-gateway/timesheet-gateway.iml" filepath="$PROJECT_DIR$/timesheet-gateway/timesheet-gateway.iml" />
+    </modules>
+  </component>
+</project>

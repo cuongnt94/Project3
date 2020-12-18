@@ -49,6 +49,7 @@ public class Timesheet {
                     false,
                     false,
                     StartingDate.plusDays(i).toString());
+
             days[i] = d;
         }
         this.days = days;

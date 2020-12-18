@@ -89,6 +89,8 @@
           <element id="library" level="project" name="Maven: org.eclipse.jdt:ecj:3.18.0" />
           <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.10.4" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.3.1" />
+          <element id="library" level="project" name="Maven: javax.activation:javax.activation-api:1.2.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">

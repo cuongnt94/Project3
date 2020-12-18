@@ -10,7 +10,8 @@ class Login extends Component{
         super(props);
         this.state={
         email:'',
-        password:''
+        password:'',
+        token:''
         }
        }
   state = {email: "", password: ""}
@@ -21,21 +22,24 @@ class Login extends Component{
     "email":this.state.email,
     "password":this.state.password
     }
-    //console.log(apiBaseUrl+'/login')
+    console.log(apiBaseUrl+'/login')
     axios.post(apiBaseUrl+'/login', payload)
-    .then(function (response) {
-    console.log(response);
-    if(response.data.code == 200){
-    console.log("Login successfull");
-    }
-    else{
-    console.log("Invalid Login");
-    alert("Invalid Login");
-    }
+    .then(response => {
+            console.log(response);
+        console.log(response.data)
+        if(response.data != 401){
+            console.log("Login Successful" + response.data);
+            this.token = response.data;
+            alert("Login Successful"+ this.token);
+
+            }
+            else{
+            console.log("Invalid Login" + response.data);
+            alert("Invalid Login"+ response.data);
+            }
     })
-    .catch(function (error) {
-    console.log(error);
-    });
+    
+  
     }
 render(){
   return (
