@@ -53,4 +53,7 @@ public class DataAccessService {
         yearRepository.insert(y);
         return y;
     }
+    public void saveTimesheet(Timesheet timesheet){
+        timesheetRepository.save(timesheet);
+    }
 }
